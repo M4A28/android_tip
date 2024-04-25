@@ -1,0 +1,117 @@
+libry of android project 
+1- libphonenumber  -> implementation 'com.googlecode.libphonenumber:libphonenumber:8.12.34' // or the latest version
+2- Retrofit -> implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+3- glide ->   implementation 'com.github.bumptech.glide:glide:4.16.0'
+4- Gson ->   implementation 'com.google.code.gson:gson:2.10.1'
+5- okhttp3 -> implementation("com.squareup.okhttp3:okhttp:4.12.0")
+6- room db -> dependencies {
+    val room_version = "2.6.1"
+
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$room_version")
+    // To use Kotlin Symbol Processing (KSP)
+    ksp("androidx.room:room-compiler:$room_version")
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:$room_version")
+
+    // optional - RxJava2 support for Room
+    implementation("androidx.room:room-rxjava2:$room_version")
+
+    // optional - RxJava3 support for Room
+    implementation("androidx.room:room-rxjava3:$room_version")
+
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation("androidx.room:room-guava:$room_version")
+
+    // optional - Test helpers
+    testImplementation("androidx.room:room-testing:$room_version")
+
+    // optional - Paging 3 Integration
+    implementation("androidx.room:room-paging:$room_version")
+}
+
+7- dagger -> plugins {
+  id 'kotlin-kapt'
+}
+
+dependencies {
+    implementation 'com.google.dagger:dagger:2.x'
+    kapt 'com.google.dagger:dagger-compiler:2.x'
+}
+
+8- Firebase ML Kit ->   implementation 'com.google.firebase:firebase-ml-vision:24.0.3',
+   implementation 'com.google.firebase:firebase-ml-vision-barcode-model:16.0.1'
+9- media3 -> implementation("androidx.media3:media3-exoplayer:1.X.X")
+    implementation("androidx.media3:media3-exoplayer-dash:1.X.X")
+    implementation("androidx.media3:media3-ui:1.X.X")
+    
+10- LeakCanary -> dependencies {
+  // debugImplementation because LeakCanary should only run in debug builds.
+  debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.14'
+} 
+11- Lottie ->   implementation 'com.airbnb.android:lottie:6.4.0'
+        implementation "com.airbnb.android:lottie-compose:6.4.0"
+12- MPAndroidChart ->     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+13- prettytime -> implementation 'org.ocpsoft.prettytime:prettytime:5.0.4.Final' 
+14- work-manger -> dependencies {
+    val work_version = "2.9.0"
+
+    // (Java only)
+    implementation("androidx.work:work-runtime:$work_version")
+
+    // Kotlin + coroutines
+    implementation("androidx.work:work-runtime-ktx:$work_version")
+
+    // optional - RxJava2 support
+    implementation("androidx.work:work-rxjava2:$work_version")
+
+    // optional - GCMNetworkManager support
+    implementation("androidx.work:work-gcm:$work_version")
+
+    // optional - Test helpers
+    androidTestImplementation("androidx.work:work-testing:$work_version")
+
+    // optional - Multiprocess support
+    implementation "androidx.work:work-multiprocess:$work_version"
+}
+15- faker-java ->     implementation 'com.github.javafaker:javafaker:1.0.2'
+
+16- navigation -> dependencies {
+  val nav_version = "2.7.7"
+
+  // Java language implementation
+  implementation("androidx.navigation:navigation-fragment:$nav_version")
+  implementation("androidx.navigation:navigation-ui:$nav_version")
+
+  // Kotlin
+  implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+  implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+  // Feature module Support
+  implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
+
+  // Testing Navigation
+  androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
+
+  // Jetpack Compose Integration
+  implementation("androidx.navigation:navigation-compose:$nav_version")
+}
+
+17- apache-commons -> implementation 'org.apache.commons:commons-lang3:3.14.0'
+18- apach-text -> implementation 'org.apache.commons:commons-text:1.12.0'
+
+
+
+
+
+
+
+
+
+
+    
